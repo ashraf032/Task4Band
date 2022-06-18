@@ -5,159 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Band</li>
-                <li>Tour</li>
-                <li>contact</li>
-                <li>More
-                    <ul>
-                        <li>Merchandice</li>
-                        <li>Extras</li>
-                        <li>Media</li>
-                    </ul>
-                </li>
-                <i class="search"></i>
+                <li class="nav-li active"><a href="">HOME</a></li>
+                <li class="nav-li non-active"><a href="">BAND</a></li>
+                <li class="nav-li non-active"><a href="">TOUR</a></li>
+                <li class="nav-li non-active"><a href="">CONTACT</a></li>
+                <li class="nav-li non-active mode"><a href="" >MODE </a><i class="fa-solid fa-caret-down"></i></li>
             </ul>
+
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <i class="fa-solid fa-bars burger"></i>
         </nav>
     </header>
+    <main>
+        <section class="carousel">
 
-    <section class="Images">
-        <div>
-            <img src="./assets/images/la.jpg" alt="">
-        </div>
-
-        <div>
-            <img src="./assets/images/ny.jpg" alt="">
-        </div>
-
-        <div>
-            <img src="./assets/images/chicago.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="TheBand-text">
-
-        <h2>The Band</h2>
-
-        <p>
-            <i>We love music</i>
-        </p>
-
-        <p class="lorem-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestiae similique voluptates consectetur
-            tempora sunt quas, unde suscipit sint harum laborum earum deleniti ex itaque impedit magni ea aliquam
-            voluptatum deserunt delectus nemo vel ut hic explicabo.Architecto dolorum rerum ipsa similique, ex
-            dignissimos illum quaerat ad hic est nihil dolorem eum deleniti molestias provident voluptates aliquid quasi
-            animi? Vel.
-        </p>
-
-        <div class="photo-name-1">
-            <p>Name</p>
-            <img src="./assets/images/bandmember.jpg" alt="">
-        </div>
-
-        <div class="photo-name-2">
-            <p>Name</p>
-            <img src="./assets/images/bandmember.jpg" alt="">
-        </div>
-
-        <div class="photo-name-3">
-            <p>Name</p>
-            <img src="./assets/images/bandmember.jpg" alt="">
-        </div>
-
-    </section>
-
-    <section class="tour-dates">
-        <h2 class="tour-dates">Tour Dates</h2>
-
-        <p class="remember-took">
-            <i>Remember to book your tickets!</i>
-        </p>
-
-        <ul>
-            <li>Sepetember
-                <span class="sold-1">Sold out</span>
-            </li>
-            <li>October
-                <span class="sold-2">Sold out</span>
-            </li>
-            <li>November
-                <span class="circle"></span>
-            </li>
-        </ul>
-
-        <div>
-            <div class="New-york">
-                <img src="./assets/images/newyork.jpg" alt="">
-
-                <div class="text-container">
-
-                    <p>New york</p>
-                    
-                    <p class="Date-1">
-                        Fri 27 NOV 2016
-                    </p>
-
-                    <p class="text-newyork">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                    <button>Buy Tickets</button>
-                </div>
+            <div class="content">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago - A night we won't forget.</p>
             </div>
+        </section>
 
-            <div>
-                <img src="./assets/images/paris.jpg" alt="">
-                <div class="text-container-2">
-                    <p>Paris</p>
-                    <p class="Date-2">
-                        Sat 28 Nov 2016
-                    </p>
-                    <p class="text-paris">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                    <button>Buy Tickets</button>
-                </div>
-            </div>
+        <section class="theband">
+            <h2>
+                THE BAND
+            </h2>
+            <em>We love music</em>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <div>
-                <div>
-                    <img src="./assets/images/sanfran.jpg" alt="">
-                    <div class="text-container-3">
-                        <p>San Fransisco</p>
-                        <p class="Date-3">Sun 29 Nov 2016</p>
+            <ul>
+                <li class="cards">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </li>
+                <li class="cards">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </li>
+                <li class="cards">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="tourdates">
 
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>Buy Tickets</button>
+            <h2>TOUR DATES</h2>
+            <em>Remember to book your tickets!</em>
+            <ul class="table">
+                <li class="table-li">September <span>Sold Out</span></li>
+                <li class="table-li">October <span>Sold Out</span></li>
+                <li class="table-li">November <span class="label">3</span></li>
+            </ul>
+
+            <ul class="city-card-wrapper">
+                <li class="card-cities">
+                    <img src="./assets/images/newyork.jpg" alt="">
+                    <div class="desc">
+                        <h4>New York</h4>
+                    <p class="thin-text">Fri 27 Nov 2016</p>
+                    <p class="descriptions">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="">Buy Tickets</a>
                     </div>
-                </div>
+                </li>
+                <li class="card-cities">
+                    <img src="./assets/images/paris.jpg" alt="">
+                    <div class="desc">
+                        <h4>Paris</h4>
+                        <p  class="thin-text">Sat 28 Nov 2016</p>
+                        <p class="descriptions">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="">Buy Tickets</a>
+                    </div>
+                </li>
+                <li class="card-cities">
+                    <img src="./assets/images/sanfran.jpg" alt="">
+                    <div class="desc">
+                        <h4>San Francisco</h4>
+                        <p  class="thin-text">Sun 29 Nov 2016</p>
+                        <p class="descriptions"> Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="">Buy Tickets</a>
+                    </div>
+                </li>
+            </ul>
 
+        </section>
+        <section class="contact">
+            <h2>CONTACT</h2>
+            <em>Fan? Drop a note!</em>
+            <div class="contact-main">
+                <address>
+                    <span><i class="fa-solid fa-location-dot"></i> Chicago, US</span>
+                    <span><i class="fa-solid fa-phone"></i>Phone: +00 151515</span>
+                    <span><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</span>
+                </address>
+                <form action="" method="post">
+                    <div class="name-mail">
+                        <input placeholder="Name" type="text">
+                        <input placeholder="Email" type="email">
+                    </div>
+                    <input placeholder="Message" class="message" type="text">
+                    <button type="submit">SEND</button>
+                </form>
             </div>
+        </section>
+        <section class="background-image">
+
+        </section>
+    </main>
+    <footer>
+        <div class="logos">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat-square"></i>
+            <i class="fa-brands fa-pinterest-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
-
-    </section>
-
-    <section class="contact">
-
-        <h2>Contact</h2>
-
-        <p>
-            <i>
-                Fan? Drop a note!
-            </i>
-        </p>
-
-
-
-
-
-
-    </section>
-
+        <p>Powered by <a href="https://w3.css">w3.css</a></p>
+    </footer>
 </body>
 
 </html>

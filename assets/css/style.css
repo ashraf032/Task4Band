@@ -1,3 +1,490 @@
-.lorem-txt {
-    text-align: justify!important;
-}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  em {
+    color: gray;
+  }
+  
+  header nav {
+    background-color: black;
+    height: 46.5px;
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+    width: 100%;
+  }
+  
+  header nav i {
+    color: white;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    height: 100%;
+        justify-content: space-around;
+            align-items: center;
+  }
+  
+  header nav ul li {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+    width: 15%;
+    height: 100%;
+    transition: .2s;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header nav ul li:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  header nav .mode {
+    display: flex;
+            align-items: center;
+  }
+  
+  header nav .mode i {
+    margin-left: 5px;
+  }
+  
+  header nav .search {
+    color: white;
+    display: flex;
+            align-items: center;
+            justify-content: center;
+    height: 100%;
+    width: 50px;
+    transition: .2s;
+  }
+  
+  header nav .search:hover {
+    background-color: #f44336;
+  }
+  
+  header nav .burger {
+    display: none;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  main .carousel {
+    height: 100vh;
+    
+    background-image: url(../images/la.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation-name: carousel;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+  }
+  
+  main .carousel .content {
+    text-align: center;
+    color: white;
+    margin-bottom: 7%;
+  }
+  
+  main .carousel .content h3 {
+    font-weight: 400;
+    font-size: x-large;
+  }
+  
+  main .carousel .content p {
+    font-weight: bolder;
+  }
+  
+  main .theband {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+          flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  main .theband h2 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 2%;
+  }
+  
+  main .theband p {
+    text-align: justify;
+    margin-top: 2%;
+    width: 800px;
+  }
+  
+  main .theband ul {
+    width: 800px;
+    margin-top: 5%;
+    display: flex;
+    list-style: none;
+        justify-content: space-around;
+  }
+  
+  main .theband ul li {
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+  }
+  
+  main .theband ul li p {
+    width: 40px;
+    margin-bottom: 6%;
+  }
+  
+  main .theband ul li img {
+    height: 55%;
+    border-radius: 5px;
+  }
+  
+  main .tourdates {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+  }
+  
+  main .tourdates h2 {
+    padding-top: 6%;
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 2%;
+    color: white;
+  }
+  
+  main .tourdates .table {
+    margin-top: 4%;
+    color: gray;
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+    width: 100%;
+    height: 20%;
+    list-style: none;
+  }
+  
+  main .tourdates .table li {
+    background-color: white;
+    height: 40px;
+    width: 760px;
+    display: flex;
+            align-items: center;
+    border: 1px solid gray;
+    border-bottom: 0;
+    padding-left: 15px;
+  }
+  
+  main .tourdates .table li span {
+    display: flex;
+            align-items: center;
+    background-color: #f44336;
+    height: 60%;
+    padding: 5px;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  main .tourdates .table li .label {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    display: flex;
+            justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  main .tourdates .city-card-wrapper {
+    color: black;
+    height: 100%;
+    width: auto;
+    display: flex;
+            flex-direction: row;
+    text-align: start;
+            justify-content: center;
+  }
+  
+  main .tourdates .city-card-wrapper li {
+    margin: 10px;
+    margin-bottom: 10%;
+    height: 400px;
+    width: 240px;
+    position: relative;
+    background-color: white;
+  }
+  
+  main .tourdates .city-card-wrapper li img {
+    height: 180px;
+    width: 240px;
+  }
+  
+  main .tourdates .city-card-wrapper li img:hover {
+    opacity: 70%;
+  }
+  
+  main .tourdates .city-card-wrapper li h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  main .tourdates .city-card-wrapper li p {
+    margin-left: 10px;
+  }
+  
+  main .tourdates .city-card-wrapper li a {
+    margin-left: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    padding: 10px;
+  }
+  
+  main .tourdates .city-card-wrapper li a:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  main .tourdates .city-card-wrapper li .thin-text {
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  main .contact {
+    width: 100%;
+    height: 400px;
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+  }
+  
+  main .contact h2 {
+    padding-top: 6%;
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 2%;
+    color: black;
+  }
+  
+  main .contact .contact-main {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+            justify-content: space-evenly;
+  }
+  
+  main .contact .contact-main address {
+    display: flex;
+            flex-direction: column;
+    font-size: 18px;
+  }
+  
+  main .contact .contact-main address span {
+    font-style: normal;
+    margin: 5px;
+  }
+  
+  main .contact .contact-main address span i {
+    margin-right: 10px;
+  }
+  
+  main .contact .contact-main form {
+    display: flex;
+            flex-direction: column;
+    position: relative;
+    height: 144px;
+  }
+  
+  main .contact .contact-main form input {
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    padding-left: 8px;
+    margin: 4px;
+  }
+  
+  main .contact .contact-main form input:focus {
+    outline: none;
+    border: 1px solid gray;
+            box-shadow: 0 0 3px #719ECE;
+  }
+  
+  main .contact .contact-main form button {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+ 
+    transition: .2s;
+  }
+  
+  main .contact .contact-main form button:hover {
+            transform: scale(1.1);
+    background-color: gray;
+    color: white;
+  }
+  
+  main .background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+           align-items: center;
+    color: gray;
+  }
+  
+  footer .logos i {
+    font-size: 23px;
+  }
+  
+  footer p {
+    margin-top: 20px;
+  }
+  
+  footer p a {
+    color: gray;
+  }
+  
+  @keyframes carousel {
+    0% {
+      background-image: url(../images/ny.jpg);
+    }
+    50% {
+      background-image: url(../images/chicago.jpg);
+    }
+    100% {
+      background-image: url(../images/la.jpg);
+    }
+  }
+  
+  @media screen and (max-width: 1336px) {
+    header nav ul {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 918px) {
+    header nav ul {
+      width: 60%;
+    }
+    main .carousel {
+      height: 800px;
+    }
+    main .theband ul {
+      width: 100%;
+    }
+    main .theband p {
+      width: 90%;
+    }
+    main .background-image {
+      height: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    header nav ul {
+      display: flex;
+         justify-content: start;
+      padding-left: 10px;
+    }
+    header nav ul .non-active {
+      display: none;
+    }
+    header nav .search {
+      display: none;
+    }
+    header nav .burger {
+      color: white;
+
+      display: flex;
+
+              align-items: center;
+
+              justify-content: center;
+      height: 100%;
+      width: 50px;
+
+      transition: .2s;
+    }
+    header nav .burger:hover {
+      background-color: #f44336;
+    }
+    main .carousel {
+      height: 450px;
+    }
+    main .theband p {
+      width: 90%;
+    }
+    main .theband ul {
+      display: block;
+    }
+    main .tourdates .table li {
+      width: 95%;
+    }
+    main .tourdates .city-card-wrapper {
+      display: flex;
+              align-items: center;
+     flex-direction: column;
+    }
+    main .tourdates .city-card-wrapper li {
+      width: 95%;
+      height: 600px;
+    }
+    main .tourdates .city-card-wrapper li img {
+      width: 100%;
+      height: auto;
+    }
+    main .contact {
+      height: 500px;
+    }
+    main .contact .contact-main {
+      display: block;
+    }
+    main .contact .contact-main form .name-mail {
+      display: flex;
+  flex-direction: column;
+    }
+    main .contact .contact-main form button {
+      bottom: -48px;
+    }
+    main .background-image {
+      height: 300px;
+    }
+  }
